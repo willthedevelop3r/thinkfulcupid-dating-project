@@ -1,0 +1,331 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ------- Items ------- */
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+}
+
+.item img {
+  width: 100%;
+}
+
+/* ------- NAVIGATION ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  color: #ecdbc9;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* ------- JOIN FORM ------- */
+
+#join img {
+  width: 100%;
+}
+
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+}
+
+form div label {
+  width: 150px;
+  margin-right: 5px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+form div input,
+form div select {
+  padding-top: 4px;
+  flex: 1;
+}
+
+/* ------- ABOUT ------- */
+
+#about img {
+  margin-bottom: 15px;
+}
+
+/* ------- DOWNLOAD ------*/
+
+#download img {
+  width: 100%;
+}
+
+/* ------- BLOG -------*/
+
+#blog img {
+  width: 100%;
+}
+
+/* -------  FOOTER ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  BREAKPOINT ------- */
+
+@media all and (min-width: 480px) {
+  /* ------- NAVIGATION ------- */
+  .logo {
+    font-size: 45px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-left: 15px;
+    justify-content: flex-start;
+  }
+
+  /* ------ ITEM ------- */
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 10px;
+    align-items: center;
+  }
+
+  /* ------- JOIN FORM ------- */
+
+  #join {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #join img,
+  form {
+    width: 50%;
+    font-size: 10px;
+  }
+
+  form input {
+    box-sizing: border-box;
+  }
+
+  /* ------- ABOUT ------- */
+
+  #about .item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 10px;
+  }
+
+  #about img {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    margin-right: 10px;
+  }
+
+  #about p {
+    display: flex;
+    font-size: 7px;
+    align-items: center;
+    flex: 2;
+  }
+
+  /* ------- DOWNLOAD ------- */
+
+  #download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+  }
+
+  #download h2 {
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  #download p {
+    display: flex;
+    align-items: center;
+  }
+
+  .download-text {
+    align-items: center;
+    font-size: 7px;
+  }
+
+  #download img {
+    width: 50%;
+  }
+
+  /* ------- BLOG ------- */
+
+  #blog img {
+    width: 100%;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #blog p {
+    padding-bottom: 5px;
+  }
+
+  #blog h3,
+  p {
+    font-size: 7px;
+  }
+}
+
+/* ------- BREAKPOINT FONT ADJUSTMENT FOR "LARGE" SCREENS------- */
+@media all and (min-width: 800px) {
+  .logo {
+    font-size: 72px;
+  }
+
+  header nav {
+    font-size: 16px;
+  }
+
+  #join img,
+  form {
+    font-size: 16px;
+  }
+
+  #about p {
+    font-size: 12px;
+  }
+
+  #download h2 {
+    font-size: 26px;
+  }
+
+  #download p {
+    font-size: 12px;
+  }
+
+  .download-text {
+    font-size: 12px;
+  }
+
+  #blog h3,
+  p {
+    font-size: 12px;
+  }
+}
